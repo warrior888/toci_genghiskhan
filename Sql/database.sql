@@ -41,6 +41,20 @@ create table GamerGames
 	Date datetime default now()
 );
 
+create table GameMetadatas
+(
+	Id serial primary key,
+	Name text
+);
+
+create table GameKindMetadatas
+(
+	Id serial primary key,
+	IdGameKinds int references GameKinds(id),
+	IdGameMetadatas int references GameMetadatas(Id),
+	Content text
+);
+
 create table GamersShowdowns
 (
 	Id serial primary key,
@@ -120,3 +134,4 @@ create table Friends
 	IdGamersFriend int references Gamers(Id),
 	Date datetime default now()
 );
+
