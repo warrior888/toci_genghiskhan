@@ -1,0 +1,12 @@
+drop table applicants;
+
+create table applicants
+(
+	id serial primary key,
+	name text,
+	surname text,
+	email text,
+	phone text,
+	mailconfirmed bool,
+	signature text
+);
