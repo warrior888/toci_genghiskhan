@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31025.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.GengisKhan.Chess", "Toci.GengisKhan.Chess\Toci.GengisKhan.Chess.csproj", "{09C4C279-0A7D-4164-AB99-0EF24F4E5BC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Toci.GengisKhan.Chess.Bll", "Toci.GengisKhan.Chess.Bll\Toci.GengisKhan.Chess.Bll.csproj", "{81665857-C114-43C6-9AD1-343DFB1BDA68}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{09C4C279-0A7D-4164-AB99-0EF24F4E5BC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C4C279-0A7D-4164-AB99-0EF24F4E5BC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C4C279-0A7D-4164-AB99-0EF24F4E5BC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C4C279-0A7D-4164-AB99-0EF24F4E5BC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81665857-C114-43C6-9AD1-343DFB1BDA68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81665857-C114-43C6-9AD1-343DFB1BDA68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81665857-C114-43C6-9AD1-343DFB1BDA68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81665857-C114-43C6-9AD1-343DFB1BDA68}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4411F74C-DF06-4EF1-85A8-B07015428A29}
+	EndGlobalSection
+EndGlobal

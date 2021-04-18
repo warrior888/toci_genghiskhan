@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/slnx.sqlite
+/Chess/Toci.GengisKhan.Chess/Toci.GengisKhan.Chess/bin/Debug/net5.0-windows
+/Chess/Toci.GengisKhan.Chess/Toci.GengisKhan.Chess/obj
+/Chess/Toci.GengisKhan.Chess/Toci.GengisKhan.Chess.Bll/obj
+/Chess/Toci.GengisKhan.Chess/Toci.GengisKhan.Chess.Bll/bin/Debug/net5.0
