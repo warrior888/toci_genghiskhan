@@ -19,9 +19,9 @@ namespace Toci.GengisKhan.Chess.Board {
         protected Action<ChessBoardField> AddToInterface;
         protected Action<Button> AddBtnToInterface;
 
-        public ChessBoard(Action<ChessBoardField> addToInterface, Action<Button> startBtn) {
+        public ChessBoard(Action<ChessBoardField> addToInterface, Action<Button> addStartBtn) {
             AddToInterface += addToInterface;
-            AddBtnToInterface += startBtn;
+            AddBtnToInterface += addStartBtn;
         }
 
         public virtual void CreateChessBoard() {
@@ -29,7 +29,7 @@ namespace Toci.GengisKhan.Chess.Board {
                 for (int j = 0; j < Dimension; j++) {
                     Board[i, j] = new ChessBoardField(i, j, (i + j) % 2 == 1 ? Color.Brown : Color.AntiqueWhite);
                     Board[i, j].Size = new Size(Size, Size);
-                    Board[j, i].Click += BoardClick;
+                    Board[i, j].Click += boardClick;
                     Board[i, j].Location = new Point(Size * i, Size * j);
                     AddToInterface(Board[i, j]);
                 }
@@ -41,14 +41,23 @@ namespace Toci.GengisKhan.Chess.Board {
             testBtn.Size = new Size(100, 80);
             testBtn.Location = new Point(900, 600);
             testBtn.Click += startGame;
+            AddBtnToInterface(testBtn);
         }
 
-        public void BoardClick(object sender, EventArgs e) {
+        public void boardClick(object sender, EventArgs e) {
             TestLogic.selectBoardField((ChessBoardField)sender);
         }
 
         private void startGame(object sender, EventArgs e) {
             TestLogic.startGame((Button)sender);
+        }
+
+        public ChessBoardField[,] GetChessBoardField() {
+            return Board;
+        }
+
+        public ChessBoardField GetBoardField(int X, int Y) {
+            return Board[X, Y];
         }
 
     }

@@ -18,7 +18,6 @@ namespace Toci.GengisKhan.Chess {
 
         protected void AddStartBtn(Button startBtn) { Controls.Add(startBtn); }
 
-        //protected void AddTestClick() { Controls.Add(BoardClick); }
         public Chess() {
             InitializeComponent();
 
@@ -28,12 +27,9 @@ namespace Toci.GengisKhan.Chess {
             ChessSelectBoard cbs = new ChessSelectBoard(AddSelect);
             cbs.createChessSelectBoard();
 
+            TestLogic.setBoardFields(cb);
+
             this.SuspendLayout();
-        }
-
-
-        public void BoardClick(object sender, EventArgs e) {
-            TestLogic.selectBoardField((ChessBoardField)sender);
         }
 
 

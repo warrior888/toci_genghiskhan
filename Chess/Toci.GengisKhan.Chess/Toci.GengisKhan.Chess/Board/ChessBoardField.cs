@@ -67,8 +67,8 @@ namespace Toci.GengisKhan.Chess.Board {
 
         public void setDefaultColors() {
 
-            if ((DimX + DimY) % 2 == 1) {
-                this.BackColor = Color.White;
+            if ((DimX + DimY) % 2 == 0) {
+                this.BackColor = Color.AntiqueWhite;
             } else {
                 this.BackColor = Color.Brown;
             }

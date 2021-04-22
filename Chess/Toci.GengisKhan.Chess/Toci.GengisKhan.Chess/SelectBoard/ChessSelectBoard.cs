@@ -51,7 +51,7 @@ namespace Toci.GengisKhan.Chess.SelectBoard {
         }
 
         public void selectFigure(object sender, EventArgs e) {
-            TestLogic.selectNewFigure( (ChessBoardSelectField)sender );
+            TestLogic.selectNewFigure( (ChessBoardSelectField)sender);
         }
 
 
